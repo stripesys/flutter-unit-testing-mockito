@@ -4,12 +4,12 @@ jobs:
     docker:
       - image: cirrusci/flutter
 
-    working_directory: /tmp
+#    working_directory: /tmp
 
     steps:
       - checkout
       - run: flutter doctor
       - run: flutter test 
       - run: flutter -v build apk
-      - store_artifacts:
-          path: /tmp/
+#      - store_artifacts:
+#          path: /tmp/
